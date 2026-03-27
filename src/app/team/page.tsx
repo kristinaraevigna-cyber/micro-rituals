@@ -51,7 +51,7 @@ export default function TeamPage() {
 
           {/* Two-column grid */}
           <div
-            className="grid grid-cols-1 lg:grid-cols-2"
+            className="grid grid-cols-1 items-stretch lg:grid-cols-2"
             style={{ border: "1px solid var(--fog)" }}
           >
             {/* Card 1 — left, with right border */}

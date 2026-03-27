@@ -2,7 +2,7 @@ import Image from "next/image";
 import FadeIn from "@/components/FadeIn";
 
 interface TeamCardProps {
-  photo: string;
+  photo?: string;
   name: string;
   credentials: string;
   bio: string;
@@ -19,29 +19,30 @@ export default function TeamCard({
   delay = 0,
 }: TeamCardProps) {
   return (
-    <FadeIn delay={delay}>
+    <FadeIn delay={delay} className="h-full">
       <div
-        className="h-full px-8 py-14 lg:px-14"
+        className="flex h-full flex-col px-8 py-14 lg:px-14"
         style={{ background: "var(--paper)" }}
       >
         {/* Headshot */}
-        <div
-          className="mb-8 overflow-hidden"
-          style={{
-            width: "80px",
-            height: "80px",
-            border: "1.5px solid var(--navy)",
-          }}
-        >
-          <Image
-            src={photo}
-            alt={name}
-            width={80}
-            height={80}
-            className="block"
-            style={{ objectFit: "cover", width: "100%", height: "100%" }}
-          />
-        </div>
+        {photo && (
+          <div
+            className="relative overflow-hidden flex-shrink-0"
+            style={{
+              width: "80px",
+              height: "80px",
+              border: "1.5px solid var(--navy)",
+              marginBottom: "2rem",
+            }}
+          >
+            <Image
+              src={photo}
+              alt={name}
+              fill
+              style={{ objectFit: "cover" }}
+            />
+          </div>
+        )}
 
         {/* Name */}
         <h3
@@ -69,7 +70,7 @@ export default function TeamCard({
 
         {/* Bio */}
         <p
-          className="mb-8 text-sm font-light leading-relaxed"
+          className="mb-8 flex-1 text-sm font-light leading-relaxed"
           style={{ color: "var(--ink-s)" }}
         >
           {bio}
