@@ -10,12 +10,13 @@ const navLinks = [
 export default function Navbar() {
   return (
     <nav
-      className="fixed top-0 left-0 right-0 z-50 px-8 py-4"
+      className="fixed top-0 left-0 right-0 z-50 px-8"
       style={{
         background: "rgba(238, 243, 248, 0.93)",
         backdropFilter: "blur(12px)",
         WebkitBackdropFilter: "blur(12px)",
         borderBottom: "1px solid var(--fog)",
+        height: "80px",
         display: "flex",
         justifyContent: "space-between",
         alignItems: "center",
@@ -27,9 +28,9 @@ export default function Navbar() {
           src="/Microrituals.png"
           alt="Everyday Micro-Rituals"
           style={{
-            height: "44px",
+            height: "64px",
             width: "auto",
-            maxWidth: "180px",
+            maxWidth: "220px",
             display: "block",
             objectFit: "contain",
           }}
