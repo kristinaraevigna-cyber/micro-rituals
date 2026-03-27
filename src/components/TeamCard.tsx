@@ -1,4 +1,3 @@
-import Image from "next/image";
 import FadeIn from "@/components/FadeIn";
 
 interface TeamCardProps {
@@ -26,22 +25,19 @@ export default function TeamCard({
       >
         {/* Headshot */}
         {photo && (
-          <div
-            className="relative overflow-hidden flex-shrink-0"
+          <img
+            src={photo}
+            alt={name}
             style={{
               width: "80px",
               height: "80px",
+              objectFit: "cover",
+              display: "block",
               border: "1.5px solid var(--navy)",
               marginBottom: "2rem",
+              borderRadius: 0,
             }}
-          >
-            <Image
-              src={photo}
-              alt={name}
-              fill
-              style={{ objectFit: "cover" }}
-            />
-          </div>
+          />
         )}
 
         {/* Name */}
