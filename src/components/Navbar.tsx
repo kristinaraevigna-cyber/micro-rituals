@@ -30,7 +30,8 @@ export default function Navbar() {
           display: "flex",
           flexDirection: "column",
           alignItems: "flex-start",
-          gap: "2px",
+          gap: "0px",
+          lineHeight: 1,
         }}
       >
         <img
@@ -50,7 +51,8 @@ export default function Navbar() {
             fontFamily: "var(--font-shippori-mincho-b1), serif",
             fontWeight: 600,
             color: "var(--ink)",
-            marginTop: 0,
+            margin: 0,
+            padding: 0,
           }}
         >
           Everyday Micro-Rituals

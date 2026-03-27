@@ -11,35 +11,56 @@ const footerLinks = [
 export default function Footer() {
   return (
     <footer
-      className="w-full py-12 px-8"
+      className="w-full"
       style={{ background: "var(--navy)" }}
     >
-      <div className="mx-auto max-w-6xl grid grid-cols-[auto_1fr_auto] items-center gap-8">
-        {/* Left: logo + subtitle */}
-        <div className="flex flex-col col-span-1 lg:col-span-2">
-          <img
-            src="/Microrituals.png"
-            alt="Everyday Micro-Rituals"
-            style={{
-              height: "28px",
-              width: "auto",
-              display: "block",
-              filter: "brightness(0) invert(1)",
-            }}
-          />
-          <span
-            className="mt-1 uppercase"
-            style={{
-              fontSize: "0.68rem",
-              letterSpacing: "0.08em",
-              color: "var(--slate-l)",
-            }}
-          >
-            Centre for Positive Health Sciences &middot; RCSI &middot; Dublin &middot; 2026
-          </span>
-        </div>
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+          textAlign: "center",
+          gap: "1.5rem",
+          padding: "4rem 3rem",
+        }}
+      >
+        {/* Logo */}
+        <img
+          src="/Microrituals.png"
+          alt="Everyday Micro-Rituals"
+          style={{
+            height: "70px",
+            width: "auto",
+            maxWidth: "240px",
+            display: "block",
+            objectFit: "contain",
+            filter: "brightness(0) invert(1)",
+            opacity: 0.85,
+          }}
+        />
 
-        {/* Right: nav links */}
+        {/* Subtitle */}
+        <span
+          className="uppercase"
+          style={{
+            fontSize: "0.68rem",
+            letterSpacing: "0.08em",
+            color: "var(--slate-l)",
+          }}
+        >
+          Centre for Positive Health Sciences &middot; RCSI &middot; Dublin &middot; 2026
+        </span>
+
+        {/* Hairline divider */}
+        <div
+          style={{
+            width: "60px",
+            height: "1px",
+            background: "var(--navy-m)",
+          }}
+        />
+
+        {/* Nav links */}
         <div className="flex items-center gap-6">
           {footerLinks.map((link) => (
             <Link
@@ -52,17 +73,14 @@ export default function Footer() {
             </Link>
           ))}
         </div>
-      </div>
 
-      {/* Copyright */}
-      <div
-        className="mx-auto max-w-6xl mt-8 pt-6 text-xs"
-        style={{
-          borderTop: "1px solid var(--navy-m)",
-          color: "var(--slate)",
-        }}
-      >
-        &copy; {new Date().getFullYear()} Centre for Positive Health Sciences, RCSI.
+        {/* Copyright */}
+        <p
+          className="text-xs"
+          style={{ color: "var(--slate)", margin: 0 }}
+        >
+          &copy; {new Date().getFullYear()} Centre for Positive Health Sciences, RCSI.
+        </p>
       </div>
     </footer>
   );
