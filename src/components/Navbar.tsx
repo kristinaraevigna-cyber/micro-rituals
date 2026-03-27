@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 const navLinks = [
   { href: "/about", label: "About" },
@@ -18,35 +19,26 @@ export default function Navbar() {
         borderBottom: "1px solid var(--fog)",
       }}
     >
-      {/* Left: mon mark + title */}
-      <Link href="/" className="flex items-center gap-4 no-underline">
-        <div
-          className="flex items-center justify-center w-9 h-9 text-sm font-bold"
+      {/* Left: logo + subtitle */}
+      <Link href="/" className="flex flex-col no-underline">
+        <Image
+          src="/Microrituals.png"
+          alt="Everyday Micro-Rituals"
+          width={180}
+          height={36}
+          style={{ height: "36px", width: "auto" }}
+          priority
+        />
+        <span
+          className="mt-1 uppercase"
           style={{
-            border: "1.5px solid var(--accent)",
-            color: "var(--accent)",
-            fontFamily: "var(--font-shippori-mincho-b1), serif",
+            fontSize: "0.68rem",
+            letterSpacing: "0.08em",
+            color: "var(--ink-s)",
           }}
         >
-          M
-        </div>
-        <div className="flex flex-col">
-          <span
-            className="text-base font-semibold tracking-tight leading-tight"
-            style={{
-              color: "var(--ink)",
-              fontFamily: "var(--font-shippori-mincho-b1), serif",
-            }}
-          >
-            Everyday Micro-Rituals
-          </span>
-          <span
-            className="text-xs tracking-wide"
-            style={{ color: "var(--ink-s)" }}
-          >
-            RCSI &middot; Centre for Positive Health Sciences
-          </span>
-        </div>
+          RCSI &middot; Centre for Positive Health Sciences
+        </span>
       </Link>
 
       {/* Right: nav links + CTA */}

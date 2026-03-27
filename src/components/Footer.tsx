@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 const footerLinks = [
   { href: "/about", label: "About" },
@@ -15,34 +16,28 @@ export default function Footer() {
       style={{ background: "var(--navy)" }}
     >
       <div className="mx-auto max-w-6xl grid grid-cols-[auto_1fr_auto] items-center gap-8">
-        {/* Left: mon mark */}
-        <div
-          className="flex items-center justify-center w-10 h-10 text-sm font-bold"
-          style={{
-            border: "1.5px solid var(--accent-l)",
-            color: "var(--accent-l)",
-            fontFamily: "var(--font-shippori-mincho-b1), serif",
-          }}
-        >
-          M
-        </div>
-
-        {/* Centre: title + subtitle */}
-        <div className="flex flex-col">
-          <span
-            className="text-base font-semibold tracking-tight"
+        {/* Left: logo + subtitle */}
+        <div className="flex flex-col col-span-1 lg:col-span-2">
+          <Image
+            src="/Microrituals.png"
+            alt="Everyday Micro-Rituals"
+            width={160}
+            height={28}
             style={{
-              color: "var(--mist)",
-              fontFamily: "var(--font-shippori-mincho-b1), serif",
+              height: "28px",
+              width: "auto",
+              filter: "brightness(0) invert(1)",
+            }}
+          />
+          <span
+            className="mt-1 uppercase"
+            style={{
+              fontSize: "0.68rem",
+              letterSpacing: "0.08em",
+              color: "var(--slate-l)",
             }}
           >
-            Everyday Micro-Rituals
-          </span>
-          <span
-            className="text-xs tracking-wide"
-            style={{ color: "var(--slate-l)" }}
-          >
-            RCSI &middot; Centre for Positive Health Sciences
+            Centre for Positive Health Sciences &middot; RCSI &middot; Dublin &middot; 2026
           </span>
         </div>
 

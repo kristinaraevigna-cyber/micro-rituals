@@ -1,7 +1,8 @@
+import Image from "next/image";
 import FadeIn from "@/components/FadeIn";
 
 interface TeamCardProps {
-  initials: string;
+  photo: string;
   name: string;
   credentials: string;
   bio: string;
@@ -10,7 +11,7 @@ interface TeamCardProps {
 }
 
 export default function TeamCard({
-  initials,
+  photo,
   name,
   credentials,
   bio,
@@ -23,20 +24,23 @@ export default function TeamCard({
         className="h-full px-8 py-14 lg:px-14"
         style={{ background: "var(--paper)" }}
       >
-        {/* Mon mark */}
+        {/* Headshot */}
         <div
-          className="flex items-center justify-center mb-6"
+          className="mb-8 overflow-hidden"
           style={{
-            width: "52px",
-            height: "52px",
+            width: "80px",
+            height: "80px",
             border: "1.5px solid var(--navy)",
-            fontFamily: "var(--font-shippori-mincho-b1), serif",
-            fontSize: "0.95rem",
-            fontWeight: 600,
-            color: "var(--navy)",
           }}
         >
-          {initials}
+          <Image
+            src={photo}
+            alt={name}
+            width={80}
+            height={80}
+            className="block"
+            style={{ objectFit: "cover", width: "100%", height: "100%" }}
+          />
         </div>
 
         {/* Name */}
