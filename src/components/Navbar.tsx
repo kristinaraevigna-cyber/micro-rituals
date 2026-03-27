@@ -10,12 +10,15 @@ const navLinks = [
 export default function Navbar() {
   return (
     <nav
-      className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-8 py-4"
+      className="fixed top-0 left-0 right-0 z-50 px-8 py-4"
       style={{
         background: "rgba(238, 243, 248, 0.93)",
         backdropFilter: "blur(12px)",
         WebkitBackdropFilter: "blur(12px)",
         borderBottom: "1px solid var(--fog)",
+        display: "flex",
+        justifyContent: "space-between",
+        alignItems: "center",
       }}
     >
       {/* Left: logo + subtitle */}
@@ -24,17 +27,17 @@ export default function Navbar() {
           src="/Microrituals.png"
           alt="Everyday Micro-Rituals"
           style={{
-            height: "36px",
+            height: "40px",
             width: "auto",
             display: "block",
           }}
         />
         <span
-          className="mt-1 uppercase"
           style={{
             fontSize: "0.68rem",
             letterSpacing: "0.08em",
             color: "var(--ink-s)",
+            marginTop: "0.25rem",
           }}
         >
           RCSI &middot; Centre for Positive Health Sciences
@@ -42,20 +45,36 @@ export default function Navbar() {
       </Link>
 
       {/* Right: nav links + CTA */}
-      <div className="hidden items-center gap-8 lg:flex">
+      <div
+        className="hidden lg:flex"
+        style={{
+          alignItems: "center",
+          gap: "2.5rem",
+        }}
+      >
         {navLinks.map((link) => (
           <Link
             key={link.href}
             href={link.href}
-            className="text-sm font-medium tracking-wide no-underline transition-colors"
-            style={{ color: "var(--ink-s)" }}
+            className="no-underline transition-colors"
+            style={{
+              fontSize: "0.82rem",
+              color: "var(--ink-s)",
+            }}
           >
             {link.label}
           </Link>
         ))}
         <Link
           href="/contact"
-          className="nav-cta text-sm font-medium px-5 py-2 no-underline transition-all"
+          className="nav-cta no-underline transition-all"
+          style={{
+            fontSize: "0.82rem",
+            border: "1px solid var(--accent)",
+            color: "var(--accent)",
+            padding: "0.4rem 1.1rem",
+            borderRadius: 0,
+          }}
         >
           Get in Touch
         </Link>
