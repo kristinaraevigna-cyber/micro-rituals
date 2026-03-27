@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Image from "next/image";
 
 const navLinks = [
   { href: "/about", label: "About" },
@@ -21,13 +20,14 @@ export default function Navbar() {
     >
       {/* Left: logo + subtitle */}
       <Link href="/" className="flex flex-col no-underline">
-        <Image
+        <img
           src="/Microrituals.png"
           alt="Everyday Micro-Rituals"
-          width={180}
-          height={36}
-          style={{ height: "36px", width: "auto" }}
-          priority
+          style={{
+            height: "36px",
+            width: "auto",
+            display: "block",
+          }}
         />
         <span
           className="mt-1 uppercase"

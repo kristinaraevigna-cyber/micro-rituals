@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Image from "next/image";
 
 const footerLinks = [
   { href: "/about", label: "About" },
@@ -18,14 +17,13 @@ export default function Footer() {
       <div className="mx-auto max-w-6xl grid grid-cols-[auto_1fr_auto] items-center gap-8">
         {/* Left: logo + subtitle */}
         <div className="flex flex-col col-span-1 lg:col-span-2">
-          <Image
+          <img
             src="/Microrituals.png"
             alt="Everyday Micro-Rituals"
-            width={160}
-            height={28}
             style={{
               height: "28px",
               width: "auto",
+              display: "block",
               filter: "brightness(0) invert(1)",
             }}
           />
