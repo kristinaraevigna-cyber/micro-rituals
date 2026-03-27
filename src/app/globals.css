@@ -1,0 +1,97 @@
+@import "tailwindcss";
+
+:root {
+  /* Backgrounds */
+  --mist:        #EEF3F8;
+  --mist-d:      #DDE8F2;
+  --mist-dd:     #CDDAEA;
+  --paper:       #F5F9FC;
+
+  /* Dark blues */
+  --navy:        #0D2137;
+  --navy-m:      #152D4A;
+  --navy-l:      #1E3F63;
+
+  /* Accent blues */
+  --accent:      #2B6CB0;
+  --accent-l:    #4A90D9;
+  --accent-xs:   #C8DDF0;
+  --accent-mist: #E4F0F9;
+
+  /* Supporting */
+  --slate:       #547792;
+  --slate-l:     #89A8C0;
+  --fog:         #D4E4EF;
+
+  /* Text */
+  --ink:         #0A1929;
+  --ink-m:       #1A3048;
+  --ink-s:       #4A6278;
+  --ink-xs:      #8BAABB;
+}
+
+@theme inline {
+  --font-display: var(--font-shippori-mincho-b1);
+  --font-body: var(--font-zen-kaku-gothic-new);
+  --font-accent: var(--font-shippori-mincho);
+}
+
+body {
+  background: var(--mist);
+  color: var(--ink);
+  font-family: var(--font-body), sans-serif;
+  position: relative;
+}
+
+/* Seigaiha wave pattern on body::before */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  opacity: 0.04;
+  background-image:
+    radial-gradient(circle at 50% 100%, transparent 62%, var(--accent) 63%, var(--accent) 64%, transparent 65%),
+    radial-gradient(circle at 50% 100%, transparent 54%, var(--accent) 55%, var(--accent) 56%, transparent 57%);
+  background-size: 40px 40px;
+  background-position: 0 0, 20px 0;
+}
+
+/* Ensure content sits above the pattern */
+body > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* FadeIn animation */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Navbar CTA hover */
+.nav-cta {
+  border: 1px solid var(--accent);
+  color: var(--accent);
+  background: transparent;
+}
+.nav-cta:hover {
+  background: var(--accent);
+  color: var(--mist);
+}
+
+/* Phase row hover */
+.phase-row {
+  transition: background 0.3s ease, padding-left 0.3s ease;
+}
+.phase-row:hover {
+  background: var(--paper);
+  padding-left: 2rem;
+}
