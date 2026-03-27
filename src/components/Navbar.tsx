@@ -23,7 +23,16 @@ export default function Navbar() {
       }}
     >
       {/* Left: logo + subtitle */}
-      <Link href="/" className="flex flex-col no-underline">
+      <Link
+        href="/"
+        className="no-underline"
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "flex-start",
+          gap: "2px",
+        }}
+      >
         <img
           src="/Microrituals.png"
           alt="Everyday Micro-Rituals"
@@ -41,7 +50,7 @@ export default function Navbar() {
             fontFamily: "var(--font-shippori-mincho-b1), serif",
             fontWeight: 600,
             color: "var(--ink)",
-            marginTop: "0.25rem",
+            marginTop: 0,
           }}
         >
           Everyday Micro-Rituals
