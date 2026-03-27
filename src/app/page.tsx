@@ -14,23 +14,6 @@ export default function Home() {
         <div className="flex-1 grid grid-cols-1 lg:grid-cols-[1fr_380px]">
           {/* Centre — main content */}
           <div className="relative px-8 py-24 lg:px-16 lg:py-32">
-            {/* Ghost kanji */}
-            <div
-              className="pointer-events-none absolute select-none"
-              style={{
-                fontSize: "9rem",
-                lineHeight: 1,
-                top: "2rem",
-                right: "8%",
-                color: "var(--ink)",
-                opacity: 0.04,
-                fontFamily: "var(--font-shippori-mincho-b1), serif",
-              }}
-              aria-hidden="true"
-            >
-              日
-            </div>
-
             <FadeIn>
               <SectionKicker label="A Book Project · RCSI 2026" />
 
