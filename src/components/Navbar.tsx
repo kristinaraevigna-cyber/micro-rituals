@@ -27,20 +27,23 @@ export default function Navbar() {
           src="/Microrituals.png"
           alt="Everyday Micro-Rituals"
           style={{
-            height: "40px",
+            height: "44px",
             width: "auto",
+            maxWidth: "180px",
             display: "block",
+            objectFit: "contain",
           }}
         />
         <span
           style={{
-            fontSize: "0.68rem",
-            letterSpacing: "0.08em",
-            color: "var(--ink-s)",
+            fontSize: "0.85rem",
+            fontFamily: "var(--font-shippori-mincho-b1), serif",
+            fontWeight: 600,
+            color: "var(--ink)",
             marginTop: "0.25rem",
           }}
         >
-          RCSI &middot; Centre for Positive Health Sciences
+          Everyday Micro-Rituals
         </span>
       </Link>
 
