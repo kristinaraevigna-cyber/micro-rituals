@@ -183,6 +183,56 @@ export default function AboutPage() {
                 ))}
               </div>
             </FadeIn>
+
+            {/* Quote + fact rows */}
+            <FadeIn delay={450}>
+              <blockquote
+                className="mt-12 mb-10 pl-5 text-sm font-light italic leading-relaxed"
+                style={{
+                  borderLeft: "2px solid var(--accent-l)",
+                  color: "rgba(255,255,255,0.85)",
+                  fontFamily: "var(--font-shippori-mincho), serif",
+                }}
+              >
+                &ldquo;The small things we do each day, often without thinking,
+                are sometimes the very things that hold us together.&rdquo;
+              </blockquote>
+
+              {[
+                { label: "Voices sought", value: "30–40" },
+                { label: "Interview duration", value: "20–30 min" },
+                { label: "Publication", value: "Open-access e-book" },
+                { label: "Public launch", value: "January 2027" },
+              ].map((fact, i) => (
+                <div
+                  key={fact.label}
+                  className="py-4"
+                  style={{
+                    borderTop:
+                      i === 0
+                        ? "1px solid rgba(212,228,239,0.12)"
+                        : "none",
+                    borderBottom: "1px solid rgba(212,228,239,0.12)",
+                  }}
+                >
+                  <p
+                    className="text-xs tracking-wide uppercase"
+                    style={{ color: "var(--slate)" }}
+                  >
+                    {fact.label}
+                  </p>
+                  <p
+                    className="mt-1 text-base font-semibold"
+                    style={{
+                      color: "rgba(255,255,255,0.85)",
+                      fontFamily: "var(--font-shippori-mincho-b1), serif",
+                    }}
+                  >
+                    {fact.value}
+                  </p>
+                </div>
+              ))}
+            </FadeIn>
           </div>
         </div>
       </div>

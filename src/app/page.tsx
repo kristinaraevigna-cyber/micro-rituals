@@ -102,78 +102,29 @@ export default function Home() {
             </FadeIn>
           </div>
 
-          {/* Right panel — dark navy */}
+          {/* Right panel — dark navy with centered logo */}
           <div
-            className="relative px-8 py-24 lg:py-32 lg:px-10"
             style={{
               background: "var(--navy)",
               borderTop: "2px solid var(--accent)",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
             }}
           >
-            {/* Corner mark */}
-            <div
-              className="absolute top-4 right-4 flex items-center justify-center"
-              style={{
-                width: "28px",
-                height: "28px",
-                border: "1px solid rgba(212,228,239,0.15)",
-                color: "var(--slate-l)",
-                fontSize: "0.7rem",
-                fontFamily: "var(--font-shippori-mincho-b1), serif",
-              }}
-            >
-              〇
-            </div>
-
             <FadeIn delay={300}>
-              {/* Quote block */}
-              <blockquote
-                className="mb-12 pl-5 text-sm font-light italic leading-relaxed"
+              <img
+                src="/Microrituals.png"
+                alt="Everyday Micro-Rituals"
                 style={{
-                  borderLeft: "2px solid var(--accent-l)",
-                  color: "var(--slate-l)",
-                  fontFamily: "var(--font-shippori-mincho), serif",
+                  width: "75%",
+                  maxWidth: "340px",
+                  height: "auto",
+                  objectFit: "contain",
+                  filter: "brightness(0) invert(1)",
+                  opacity: 0.9,
                 }}
-              >
-                &ldquo;The small things we do each day, often without thinking,
-                are sometimes the very things that hold us together.&rdquo;
-              </blockquote>
-
-              {/* Fact rows */}
-              {[
-                { label: "Voices sought", value: "30–40" },
-                { label: "Interview duration", value: "20 min" },
-                { label: "Publication", value: "Open-access e-book" },
-                { label: "Public launch", value: "January 2027" },
-              ].map((fact, i) => (
-                <div
-                  key={fact.label}
-                  className="py-4"
-                  style={{
-                    borderTop:
-                      i === 0
-                        ? "1px solid rgba(212,228,239,0.12)"
-                        : "none",
-                    borderBottom: "1px solid rgba(212,228,239,0.12)",
-                  }}
-                >
-                  <p
-                    className="text-xs tracking-wide uppercase"
-                    style={{ color: "var(--slate)" }}
-                  >
-                    {fact.label}
-                  </p>
-                  <p
-                    className="mt-1 text-base font-semibold"
-                    style={{
-                      color: "rgba(255,255,255,0.85)",
-                      fontFamily: "var(--font-shippori-mincho-b1), serif",
-                    }}
-                  >
-                    {fact.value}
-                  </p>
-                </div>
-              ))}
+              />
             </FadeIn>
           </div>
         </div>
