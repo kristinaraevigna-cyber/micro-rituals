@@ -29,8 +29,8 @@ export default function TeamCard({
             src={photo}
             alt={name}
             style={{
-              width: "80px",
-              height: "80px",
+              width: "140px",
+              height: "140px",
               objectFit: "cover",
               display: "block",
               border: "1.5px solid var(--navy)",
