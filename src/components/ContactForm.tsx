@@ -3,7 +3,7 @@
 import { useState, type FormEvent } from "react";
 
 const subjects = [
-  "Sharing my micro-ritual",
+  "Sharing my tiny practice",
   "Learning more about the project",
   "Research collaboration",
   "Media enquiry",

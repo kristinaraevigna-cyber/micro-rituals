@@ -27,9 +27,9 @@ const zenKakuGothicNew = Zen_Kaku_Gothic_New({
 });
 
 export const metadata: Metadata = {
-  title: "Everyday Micro-Rituals — Centre for Positive Health Sciences",
+  title: "Thrive by Design — 30 Tiny Practices for Everyday Wellbeing",
   description:
-    "Simple practices for well-being that fit into your day. A book project by the Centre for Positive Health Sciences.",
+    "30 Tiny Practices for Everyday Wellbeing. A book project by the Centre for Positive Health Sciences.",
 };
 
 export default function RootLayout({

@@ -19,7 +19,7 @@ const steps = [
     numeral: "三",
     title: "Into the book",
     description:
-      "Your micro-ritual is paired with research and added to the collection. You review it before publication.",
+      "Your tiny practice is paired with research and added to the collection. You review it before publication.",
   },
 ];
 
@@ -61,7 +61,7 @@ export default function ContributePage() {
                 fontFamily: "var(--font-shippori-mincho-b1), serif",
               }}
             >
-              Do you have a micro-ritual that grounds{" "}
+              Do you have a tiny practice that grounds{" "}
               <em
                 className="not-italic"
                 style={{

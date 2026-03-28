@@ -27,7 +27,7 @@ export default function Footer() {
         {/* Logo */}
         <img
           src="/Microrituals.png"
-          alt="Everyday Micro-Rituals"
+          alt="Thrive by Design"
           style={{
             height: "70px",
             width: "auto",

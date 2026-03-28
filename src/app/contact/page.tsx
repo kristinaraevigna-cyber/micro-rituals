@@ -36,7 +36,7 @@ export default function ContactPage() {
             className="mt-6 mb-10 text-base font-light leading-relaxed"
             style={{ color: "var(--ink-s)" }}
           >
-            Whether you&apos;d like to share your own micro-ritual, learn
+            Whether you&apos;d like to share your own tiny practice, learn
             more about the project, or explore research collaboration — we
             welcome your message.
           </p>

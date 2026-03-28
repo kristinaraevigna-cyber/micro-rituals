@@ -36,7 +36,7 @@ export default function Navbar() {
       >
         <img
           src="/Microrituals.png"
-          alt="Everyday Micro-Rituals"
+          alt="Thrive by Design"
           style={{
             height: "64px",
             width: "auto",
@@ -55,7 +55,7 @@ export default function Navbar() {
             padding: 0,
           }}
         >
-          Everyday Micro-Rituals
+          Thrive by Design
         </span>
       </Link>
 

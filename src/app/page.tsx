@@ -8,7 +8,7 @@ export default function Home() {
     <section className="relative w-full" style={{ background: "var(--mist)" }}>
       <div className="flex min-h-screen">
         {/* Left vertical strip */}
-        <VertStrip labels={["2026", "Micro-Rituals", "Well-being"]} />
+        <VertStrip labels={["2026", "Thrive by Design", "Well-being"]} />
 
         {/* Content grid */}
         <div className="flex-1 grid grid-cols-1 lg:grid-cols-[1fr_380px]">
@@ -17,6 +17,7 @@ export default function Home() {
             <FadeIn>
               <SectionKicker label="A Book Project · 2026" />
 
+
               <h1
                 className="mt-6 text-4xl font-bold leading-tight lg:text-5xl"
                 style={{
@@ -24,7 +25,7 @@ export default function Home() {
                   fontFamily: "var(--font-shippori-mincho-b1), serif",
                 }}
               >
-                Everyday{" "}
+                Thrive by{" "}
                 <em
                   className="not-italic"
                   style={{
@@ -33,7 +34,7 @@ export default function Home() {
                     fontStyle: "italic",
                   }}
                 >
-                  Micro-Rituals
+                  Design
                 </em>
               </h1>
 
@@ -45,7 +46,7 @@ export default function Home() {
                   color: "var(--ink-m)",
                 }}
               >
-                Simple Practices for Well-being That Fit into Your Day
+                30 Tiny Practices for Everyday Wellbeing
               </p>
             </FadeIn>
 
@@ -54,9 +55,9 @@ export default function Home() {
                 className="mt-6 max-w-lg text-base font-light leading-relaxed"
                 style={{ color: "var(--ink-s)" }}
               >
-                A collection of 30–40 personal accounts from researchers,
+                A collection of 30 tiny practices from researchers,
                 clinicians, coaches, students, and staff — each sharing a simple
-                practice that supports their well-being, paired with a brief
+                practice that supports their wellbeing, paired with a brief
                 exploration of the evidence behind it. Published as an
                 open-access e-book.
               </p>
@@ -98,7 +99,7 @@ export default function Home() {
             <FadeIn delay={300}>
               <img
                 src="/Microrituals.png"
-                alt="Everyday Micro-Rituals"
+                alt="Thrive by Design"
                 style={{
                   width: "75%",
                   maxWidth: "340px",

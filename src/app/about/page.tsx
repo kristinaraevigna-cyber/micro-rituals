@@ -68,7 +68,7 @@ export default function AboutPage() {
 
       <div className="flex min-h-screen">
         {/* Left vertical strip */}
-        <VertStrip labels={["About", "Micro-Rituals", "2026"]} light />
+        <VertStrip labels={["About", "Thrive by Design", "2026"]} light />
 
         {/* Content area */}
         <div className="flex flex-1 flex-col lg:flex-row">
@@ -128,7 +128,7 @@ export default function AboutPage() {
                 style={{ color: "var(--slate-l)" }}
               >
                 <em style={{ fontFamily: "var(--font-shippori-mincho), serif" }}>
-                  Everyday Micro-Rituals
+                  Thrive by Design
                 </em>{" "}
                 gathers 30–40 personal accounts from researchers, clinicians,
                 coaches, students, and staff — each sharing
