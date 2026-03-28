@@ -21,45 +21,9 @@ export default function Footer() {
           alignItems: "center",
           textAlign: "center",
           gap: "1.5rem",
-          padding: "4rem 3rem",
+          padding: "3rem",
         }}
       >
-        {/* Logo */}
-        <img
-          src="/Microrituals.png"
-          alt="Thrive by Design"
-          style={{
-            height: "70px",
-            width: "auto",
-            maxWidth: "240px",
-            display: "block",
-            objectFit: "contain",
-            filter: "brightness(0) invert(1)",
-            opacity: 0.85,
-          }}
-        />
-
-        {/* Subtitle */}
-        <span
-          className="uppercase"
-          style={{
-            fontSize: "0.68rem",
-            letterSpacing: "0.08em",
-            color: "var(--slate-l)",
-          }}
-        >
-          Centre for Positive Health Sciences &middot; Dublin &middot; 2026
-        </span>
-
-        {/* Hairline divider */}
-        <div
-          style={{
-            width: "60px",
-            height: "1px",
-            background: "var(--navy-m)",
-          }}
-        />
-
         {/* Nav links */}
         <div className="flex items-center gap-6">
           {footerLinks.map((link) => (
@@ -79,7 +43,7 @@ export default function Footer() {
           className="text-xs"
           style={{ color: "var(--slate)", margin: 0 }}
         >
-          &copy; {new Date().getFullYear()} Centre for Positive Health Sciences.
+          &copy; {new Date().getFullYear()} Thrive by Design.
         </p>
       </div>
     </footer>
