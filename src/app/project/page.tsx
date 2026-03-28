@@ -19,7 +19,7 @@ const phases = [
     index: "03",
     title: "A Book for Everyone",
     tag: "Open-Access · Free",
-    body: "The final collection becomes an open-access e-book published through RCSI Library — free to read, share, and draw from. Launched at the Positive Health Summit in January 2027.",
+    body: "The final collection becomes an open-access e-book — free to read, share, and draw from. Launched at the Positive Health Summit in January 2027.",
   },
 ];
 

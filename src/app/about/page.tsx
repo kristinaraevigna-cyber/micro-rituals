@@ -11,7 +11,7 @@ const stats = [
   {
     value: "Free",
     accentChar: null,
-    label: "Open-access via RCSI Library",
+    label: "Open-access publication",
   },
   {
     value: "20′",
@@ -68,7 +68,7 @@ export default function AboutPage() {
 
       <div className="flex min-h-screen">
         {/* Left vertical strip */}
-        <VertStrip labels={["About", "Micro-Rituals", "RCSI"]} light />
+        <VertStrip labels={["About", "Micro-Rituals", "2026"]} light />
 
         {/* Content area */}
         <div className="flex flex-1 flex-col lg:flex-row">
@@ -131,7 +131,7 @@ export default function AboutPage() {
                   Everyday Micro-Rituals
                 </em>{" "}
                 gathers 30–40 personal accounts from researchers, clinicians,
-                coaches, students, and staff at RCSI and beyond — each sharing
+                coaches, students, and staff — each sharing
                 a simple practice that supports their well-being, paired with
                 a brief exploration of the evidence behind it.
               </p>

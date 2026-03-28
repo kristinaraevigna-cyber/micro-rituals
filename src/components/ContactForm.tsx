@@ -168,17 +168,17 @@ export default function ContactForm() {
         </select>
       </div>
 
-      {/* Connection to RCSI */}
+      {/* Affiliation */}
       <div className="mb-4">
         <label
           className="block mb-1 text-xs font-medium tracking-wide uppercase"
           style={{ color: "var(--ink-s)" }}
         >
-          Connection to RCSI
+          Affiliation
         </label>
         <input
           type="text"
-          name="connectionToRCSI"
+          name="affiliation"
           className="w-full px-3 py-2 text-sm focus:border-[var(--accent)] focus:shadow-[0_0_0_2px_rgba(43,108,176,0.12)]"
           style={inputStyle}
         />
@@ -217,7 +217,7 @@ export default function ContactForm() {
           style={{ color: "var(--ink-s)" }}
         >
           I consent to my information being used to respond to this enquiry.
-          Data will be handled in accordance with RCSI&apos;s privacy policy.
+          Data will be handled in accordance with our privacy policy.
         </label>
       </div>
 

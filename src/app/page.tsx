@@ -8,14 +8,14 @@ export default function Home() {
     <section className="relative w-full" style={{ background: "var(--mist)" }}>
       <div className="flex min-h-screen">
         {/* Left vertical strip */}
-        <VertStrip labels={["RCSI · 2026", "Micro-Rituals", "Well-being"]} />
+        <VertStrip labels={["2026", "Micro-Rituals", "Well-being"]} />
 
         {/* Content grid */}
         <div className="flex-1 grid grid-cols-1 lg:grid-cols-[1fr_380px]">
           {/* Centre — main content */}
           <div className="relative px-8 py-24 lg:px-16 lg:py-32">
             <FadeIn>
-              <SectionKicker label="A Book Project · RCSI 2026" />
+              <SectionKicker label="A Book Project · 2026" />
 
               <h1
                 className="mt-6 text-4xl font-bold leading-tight lg:text-5xl"
@@ -58,7 +58,7 @@ export default function Home() {
                 clinicians, coaches, students, and staff — each sharing a simple
                 practice that supports their well-being, paired with a brief
                 exploration of the evidence behind it. Published as an
-                open-access e-book by RCSI Library.
+                open-access e-book.
               </p>
             </FadeIn>
 

@@ -48,7 +48,7 @@ export default function Footer() {
             color: "var(--slate-l)",
           }}
         >
-          Centre for Positive Health Sciences &middot; RCSI &middot; Dublin &middot; 2026
+          Centre for Positive Health Sciences &middot; Dublin &middot; 2026
         </span>
 
         {/* Hairline divider */}
@@ -79,7 +79,7 @@ export default function Footer() {
           className="text-xs"
           style={{ color: "var(--slate)", margin: 0 }}
         >
-          &copy; {new Date().getFullYear()} Centre for Positive Health Sciences, RCSI.
+          &copy; {new Date().getFullYear()} Centre for Positive Health Sciences.
         </p>
       </div>
     </footer>
