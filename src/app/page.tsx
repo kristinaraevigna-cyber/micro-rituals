@@ -4,13 +4,25 @@ import SectionKicker from "@/components/SectionKicker";
 
 export default function Home() {
   return (
-    <section className="relative w-full" style={{ background: "var(--mist)" }}>
+    <section className="w-full">
+      {/* Row 1 — Hero */}
       <div
-        className="min-h-screen grid grid-cols-1"
-        style={{ gridTemplateColumns: "1fr 1fr" }}
+        style={{
+          background: "var(--mist-d)",
+          display: "grid",
+          gridTemplateColumns: "1fr 1fr",
+          minHeight: "70vh",
+        }}
       >
-        {/* Left — main content */}
-        <div className="relative px-8 py-24 lg:px-16 lg:py-32">
+        {/* Left column — text */}
+        <div
+          style={{
+            padding: "6rem",
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "center",
+          }}
+        >
           <FadeIn>
             <SectionKicker label="A Book Project · 2026" />
 
@@ -82,14 +94,14 @@ export default function Home() {
           </FadeIn>
         </div>
 
-        {/* Right panel — dark navy with logo */}
+        {/* Right column — logo */}
         <div
           style={{
-            background: "var(--navy)",
-            borderTop: "2px solid var(--accent)",
+            background: "var(--accent-mist)",
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
+            minHeight: "70vh",
           }}
         >
           <FadeIn delay={300}>
@@ -97,11 +109,10 @@ export default function Home() {
               src="/Microrituals.png"
               alt="Thrive by Design"
               style={{
-                width: "65%",
-                maxWidth: "320px",
+                width: "70%",
+                maxWidth: "400px",
                 height: "auto",
                 objectFit: "contain",
-                opacity: 0.92,
               }}
             />
           </FadeIn>
