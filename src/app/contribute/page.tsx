@@ -79,9 +79,9 @@ export default function ContributePage() {
               className="mt-6 max-w-xl text-base font-light leading-relaxed"
               style={{ color: "var(--slate-l)" }}
             >
-              We are looking for researchers, clinicians, coaches, students, and
-              staff who would like to share a simple practice that supports their
-              well-being — and have it included in an open-access book.
+              We are looking for participants of many Centre for Positive Health
+              Sciences programmes who would like to share a simple practice that
+              supports their well-being — and have it included in an open-access book.
             </p>
           </FadeIn>
 
