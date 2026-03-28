@@ -97,7 +97,7 @@ export default function Home() {
         {/* Right column — logo */}
         <div
           style={{
-            background: "var(--accent-mist)",
+            background: "var(--mist-d)",
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
@@ -109,8 +109,8 @@ export default function Home() {
               src="/Microrituals.png"
               alt="Thrive by Design"
               style={{
-                width: "70%",
-                maxWidth: "400px",
+                width: "85%",
+                maxWidth: "520px",
                 height: "auto",
                 objectFit: "contain",
               }}
