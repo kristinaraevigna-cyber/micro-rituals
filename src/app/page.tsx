@@ -1,6 +1,7 @@
 import Link from "next/link";
 import FadeIn from "@/components/FadeIn";
 import SectionKicker from "@/components/SectionKicker";
+import HeroLogo from "@/components/HeroLogo";
 
 export default function Home() {
   return (
@@ -118,31 +119,15 @@ export default function Home() {
           className="hero-logo-col"
           style={{
             background: "var(--mist-d)",
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
             minHeight: "70vh",
-            padding: "2rem",
           }}
         >
-          <FadeIn delay={300}>
-            <img
-              src="/Microrituals.png"
-              alt="Thrive by Design"
-              className="hero-logo-img"
-              style={{
-                width: "85%",
-                maxWidth: "520px",
-                height: "auto",
-                objectFit: "contain",
-              }}
-            />
-            <style>{`
-              @media (max-width: 1000px) {
-                .hero-logo-img { max-width: 260px !important; }
-              }
-            `}</style>
-          </FadeIn>
+          <HeroLogo />
+          <style>{`
+            @media (max-width: 1000px) {
+              .hero-logo-img { max-width: 260px !important; }
+            }
+          `}</style>
         </div>
       </div>
     </section>
