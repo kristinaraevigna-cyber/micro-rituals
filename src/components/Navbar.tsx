@@ -16,7 +16,7 @@ export default function Navbar() {
         backdropFilter: "blur(12px)",
         WebkitBackdropFilter: "blur(12px)",
         borderBottom: "1px solid var(--fog)",
-        height: "88px",
+        height: "108px",
         display: "flex",
         justifyContent: "space-between",
         alignItems: "center",
@@ -28,9 +28,9 @@ export default function Navbar() {
           src="/Microrituals.png"
           alt="Thrive by Design"
           style={{
-            height: "72px",
+            height: "96px",
             width: "auto",
-            maxWidth: "240px",
+            maxWidth: "280px",
             display: "block",
             objectFit: "contain",
           }}
