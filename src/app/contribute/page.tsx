@@ -91,23 +91,14 @@ export default function ContributePage() {
               {steps.map((step, i) => (
                 <div
                   key={step.numeral}
-                  className="py-6 px-4 lg:py-8 lg:px-6"
                   style={{
-                    borderLeft:
-                      i > 0
-                        ? "1px solid rgba(212,228,239,0.15)"
-                        : "none",
-                    borderTop:
-                      i > 0
+                    padding: "2rem",
+                    borderRight:
+                      i < steps.length - 1
                         ? "1px solid rgba(212,228,239,0.15)"
                         : "none",
                   }}
                 >
-                  <style>{`
-                    @media (min-width: 768px) {
-                      .contribute-step { border-top: none !important; }
-                    }
-                  `}</style>
                   <p
                     className="mb-4 text-3xl font-bold"
                     style={{
