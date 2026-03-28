@@ -8,7 +8,7 @@ export default function ContactPage() {
       className="relative w-full"
       style={{ background: "var(--paper)" }}
     >
-      <div style={{ maxWidth: "680px", margin: "0 auto", padding: "120px 2rem" }}>
+      <div style={{ maxWidth: "680px", margin: "0 auto", padding: "clamp(2rem, 8vw, 120px) 2rem" }}>
         <FadeIn>
           <SectionKicker label="○○四 · Contact" />
 

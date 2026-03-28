@@ -5,17 +5,33 @@ import SectionKicker from "@/components/SectionKicker";
 export default function Home() {
   return (
     <section className="w-full">
-      {/* Row 1 — Hero */}
       <div
+        className="hero-grid"
         style={{
           background: "var(--mist-d)",
           display: "grid",
-          gridTemplateColumns: "1fr 1fr",
           minHeight: "70vh",
         }}
       >
+        <style>{`
+          .hero-grid {
+            grid-template-columns: 1fr 1fr;
+          }
+          @media (max-width: 1000px) {
+            .hero-grid {
+              grid-template-columns: 1fr;
+            }
+            .hero-logo-col { order: -1; min-height: 40vh !important; }
+            .hero-text-col { padding: 2rem !important; }
+            .hero-h1 { font-size: clamp(2rem, 8vw, 4rem) !important; }
+            .hero-ctas { flex-direction: column !important; }
+            .hero-ctas a { width: 100%; text-align: center; }
+          }
+        `}</style>
+
         {/* Left column — text */}
         <div
+          className="hero-text-col"
           style={{
             padding: "6rem",
             display: "flex",
@@ -27,10 +43,11 @@ export default function Home() {
             <SectionKicker label="A Book Project · 2026" />
 
             <h1
-              className="mt-6 text-4xl font-bold leading-tight lg:text-5xl"
+              className="hero-h1 mt-6 font-bold leading-tight"
               style={{
                 color: "var(--ink)",
                 fontFamily: "var(--font-shippori-mincho-b1), serif",
+                fontSize: "clamp(2.5rem, 5vw, 3.5rem)",
               }}
             >
               Thrive by{" "}
@@ -72,7 +89,9 @@ export default function Home() {
           </FadeIn>
 
           <FadeIn delay={200}>
-            <div className="mt-10 flex flex-wrap items-center gap-4">
+            <div
+              className="hero-ctas mt-10 flex flex-wrap items-center gap-4"
+            >
               <Link
                 href="/contribute"
                 className="inline-block px-8 py-3 text-sm font-medium tracking-widest uppercase no-underline transition-colors"
@@ -96,18 +115,21 @@ export default function Home() {
 
         {/* Right column — logo */}
         <div
+          className="hero-logo-col"
           style={{
             background: "var(--mist-d)",
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
             minHeight: "70vh",
+            padding: "2rem",
           }}
         >
           <FadeIn delay={300}>
             <img
               src="/Microrituals.png"
               alt="Thrive by Design"
+              className="hero-logo-img"
               style={{
                 width: "85%",
                 maxWidth: "520px",
@@ -115,6 +137,11 @@ export default function Home() {
                 objectFit: "contain",
               }}
             />
+            <style>{`
+              @media (max-width: 1000px) {
+                .hero-logo-img { max-width: 260px !important; }
+              }
+            `}</style>
           </FadeIn>
         </div>
       </div>

@@ -21,11 +21,13 @@ export default function Footer() {
           alignItems: "center",
           textAlign: "center",
           gap: "1.5rem",
-          padding: "3rem",
+          padding: "2rem 1.5rem",
         }}
       >
         {/* Nav links */}
-        <div className="flex items-center gap-6">
+        <div
+          className="flex flex-wrap items-center justify-center gap-4 lg:gap-6"
+        >
           {footerLinks.map((link) => (
             <Link
               key={link.href}

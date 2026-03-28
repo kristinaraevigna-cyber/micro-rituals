@@ -9,12 +9,12 @@ export default function TeamPage() {
       className="relative w-full"
       style={{ background: "var(--mist-d)" }}
     >
-      <div className="flex min-h-screen">
+      <div className="flex">
         {/* Left vertical strip */}
         <VertStrip labels={["Team", "Research", "2026"]} />
 
         {/* Content */}
-        <div className="flex-1 px-8 py-24 lg:px-16 lg:py-32">
+        <div className="flex-1 px-6 py-16 lg:px-16 lg:py-32">
           <FadeIn>
             <p
               className="mb-6 text-sm tracking-widest"
@@ -29,7 +29,7 @@ export default function TeamPage() {
             <SectionKicker label="The Team" />
 
             <h2
-              className="mt-6 mb-16 text-3xl font-semibold leading-snug lg:text-4xl"
+              className="mt-6 mb-12 text-3xl font-semibold leading-snug lg:mb-16 lg:text-4xl"
               style={{
                 color: "var(--ink)",
                 fontFamily: "var(--font-shippori-mincho-b1), serif",
@@ -54,8 +54,8 @@ export default function TeamPage() {
             className="grid grid-cols-1 items-stretch lg:grid-cols-2"
             style={{ border: "1px solid var(--fog)" }}
           >
-            {/* Card 1 — left, with right border */}
-            <div style={{ borderRight: "1px solid var(--fog)" }}>
+            {/* Card 1 — left */}
+            <div className="team-card-left" style={{ borderRight: "1px solid var(--fog)" }}>
               <TeamCard
                 photo="/Christian.jpg"
                 name="Prof. Christian van Nieuwerburgh"

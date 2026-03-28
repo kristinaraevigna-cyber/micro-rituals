@@ -66,16 +66,15 @@ export default function AboutPage() {
         水
       </div>
 
-      <div className="flex min-h-screen">
-        {/* Left vertical strip */}
+      <div className="flex">
+        {/* Left vertical strip — hidden on mobile */}
         <VertStrip labels={["About", "Thrive by Design", "2026"]} light />
 
         {/* Content area */}
         <div className="flex flex-1 flex-col lg:flex-row">
           {/* Left — text column */}
-          <div className="flex-1 px-8 py-24 lg:px-16 lg:py-32">
+          <div className="flex-1 px-6 py-16 lg:px-16 lg:py-32">
             <FadeIn>
-              {/* Section number */}
               <p
                 className="mb-6 text-sm tracking-widest"
                 style={{
@@ -151,9 +150,9 @@ export default function AboutPage() {
           </div>
 
           {/* Right — stats column */}
-          <div className="w-full px-8 pb-24 lg:w-80 lg:px-0 lg:py-32 lg:pr-12">
+          <div className="w-full px-6 pb-16 lg:w-80 lg:px-0 lg:py-32 lg:pr-12">
             <FadeIn delay={350}>
-              <div className="flex flex-col">
+              <div className="grid grid-cols-2 gap-0 lg:grid-cols-1">
                 {stats.map((stat, i) => (
                   <div
                     key={stat.value}

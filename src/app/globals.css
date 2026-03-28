@@ -95,3 +95,35 @@ body > * {
   background: var(--paper);
   padding-left: 2rem;
 }
+
+/* Mobile: disable phase hover shift */
+@media (max-width: 640px) {
+  .phase-row:hover {
+    padding-left: 1.5rem;
+  }
+}
+
+/* Mobile menu */
+.mobile-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: var(--mist);
+  border-bottom: 1px solid var(--fog);
+  padding: 1.5rem;
+  flex-direction: column;
+  gap: 1rem;
+}
+.mobile-menu.open {
+  display: flex;
+}
+
+/* Team card border-right removal on mobile */
+@media (max-width: 1000px) {
+  .team-card-left {
+    border-right: none !important;
+    border-bottom: 1px solid var(--fog);
+  }
+}

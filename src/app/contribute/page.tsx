@@ -31,7 +31,7 @@ export default function ContributePage() {
     >
       {/* Full-width banner */}
       <div
-        className="relative w-full overflow-hidden px-8 py-24 lg:px-16 lg:py-32"
+        className="relative w-full overflow-hidden px-6 py-16 lg:px-16 lg:py-32"
         style={{ background: "var(--navy-l)" }}
       >
         {/* Ghost kanji */}
@@ -87,20 +87,27 @@ export default function ContributePage() {
 
           {/* Three step columns */}
           <FadeIn delay={200}>
-            <div
-              className="mt-16 grid grid-cols-1 gap-0 md:grid-cols-3"
-            >
+            <div className="mt-12 grid grid-cols-1 gap-0 md:grid-cols-3 lg:mt-16">
               {steps.map((step, i) => (
                 <div
                   key={step.numeral}
-                  className="py-8 px-6"
+                  className="py-6 px-4 lg:py-8 lg:px-6"
                   style={{
                     borderLeft:
                       i > 0
                         ? "1px solid rgba(212,228,239,0.15)"
                         : "none",
+                    borderTop:
+                      i > 0
+                        ? "1px solid rgba(212,228,239,0.15)"
+                        : "none",
                   }}
                 >
+                  <style>{`
+                    @media (min-width: 768px) {
+                      .contribute-step { border-top: none !important; }
+                    }
+                  `}</style>
                   <p
                     className="mb-4 text-3xl font-bold"
                     style={{

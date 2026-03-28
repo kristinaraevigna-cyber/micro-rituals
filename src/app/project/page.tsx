@@ -29,12 +29,12 @@ export default function ProjectPage() {
       className="relative w-full"
       style={{ background: "var(--mist)" }}
     >
-      <div className="flex min-h-screen">
+      <div className="flex">
         {/* Left vertical strip */}
         <VertStrip labels={["Project", "Three Phases", "2026–27"]} />
 
         {/* Content */}
-        <div className="flex-1 px-8 py-24 lg:px-16 lg:py-32">
+        <div className="flex-1 px-6 py-16 lg:px-16 lg:py-32">
           <FadeIn>
             <p
               className="mb-6 text-sm tracking-widest"
@@ -49,7 +49,7 @@ export default function ProjectPage() {
             <SectionKicker label="How It Works" />
 
             <h2
-              className="mt-6 mb-16 text-3xl font-semibold leading-snug lg:text-4xl"
+              className="mt-6 mb-12 text-3xl font-semibold leading-snug lg:mb-16 lg:text-4xl"
               style={{
                 color: "var(--ink)",
                 fontFamily: "var(--font-shippori-mincho-b1), serif",
@@ -74,7 +74,7 @@ export default function ProjectPage() {
             {phases.map((phase, i) => (
               <FadeIn key={phase.index} delay={i * 120}>
                 <div
-                  className="phase-row py-8 px-6 -mx-6"
+                  className="phase-row py-6 px-4 -mx-4 lg:py-8 lg:px-6 lg:-mx-6"
                   style={{
                     borderTop: "1px solid var(--fog)",
                     borderBottom:
@@ -83,7 +83,6 @@ export default function ProjectPage() {
                         : "none",
                   }}
                 >
-                  {/* Index label */}
                   <p
                     className="mb-3 text-xs font-medium tracking-widest"
                     style={{ color: "var(--accent)" }}
@@ -91,8 +90,7 @@ export default function ProjectPage() {
                     {phase.index} ——
                   </p>
 
-                  {/* Title + tag row */}
-                  <div className="flex flex-wrap items-baseline gap-4 mb-3">
+                  <div className="flex flex-col gap-2 mb-3 lg:flex-row lg:flex-wrap lg:items-baseline lg:gap-4">
                     <h3
                       className="font-semibold"
                       style={{
@@ -104,7 +102,7 @@ export default function ProjectPage() {
                       {phase.title}
                     </h3>
                     <span
-                      className="inline-block px-3 py-1 text-[0.68rem] font-medium tracking-wide"
+                      className="inline-block self-start px-3 py-1 text-[0.68rem] font-medium tracking-wide"
                       style={{
                         border: "1px solid var(--accent-xs)",
                         background: "var(--accent-mist)",
@@ -115,7 +113,6 @@ export default function ProjectPage() {
                     </span>
                   </div>
 
-                  {/* Body */}
                   <p
                     className="max-w-xl text-sm leading-relaxed"
                     style={{
