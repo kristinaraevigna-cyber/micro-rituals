@@ -86,29 +86,43 @@ export default function Home() {
             </FadeIn>
           </div>
 
-          {/* Right panel — dark navy with centered logo */}
+          {/* Right panel — dark navy with hero logo illustration */}
           <div
             style={{
               background: "var(--navy)",
               borderTop: "2px solid var(--accent)",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
+              position: "relative",
+              overflow: "hidden",
             }}
           >
             <FadeIn delay={300}>
-              <img
-                src="/Microrituals.png"
-                alt="Thrive by Design"
+              <div
                 style={{
-                  width: "75%",
-                  maxWidth: "340px",
-                  height: "auto",
-                  objectFit: "contain",
-                  filter: "brightness(0) invert(1)",
-                  opacity: 0.9,
+                  position: "absolute",
+                  top: "50%",
+                  left: "50%",
+                  transform: "translate(-50%, -50%)",
+                  width: "500px",
+                  height: "500px",
+                  background:
+                    "radial-gradient(circle, rgba(255,255,255,0.06) 0%, transparent 70%)",
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
                 }}
-              />
+              >
+                <img
+                  src="/Microrituals.png"
+                  alt="Thrive by Design"
+                  style={{
+                    width: "70%",
+                    maxWidth: "380px",
+                    height: "auto",
+                    objectFit: "contain",
+                    opacity: 0.92,
+                  }}
+                />
+              </div>
             </FadeIn>
           </div>
         </div>
