@@ -16,47 +16,25 @@ export default function Navbar() {
         backdropFilter: "blur(12px)",
         WebkitBackdropFilter: "blur(12px)",
         borderBottom: "1px solid var(--fog)",
-        height: "80px",
+        height: "88px",
         display: "flex",
         justifyContent: "space-between",
         alignItems: "center",
       }}
     >
-      {/* Left: logo + subtitle */}
-      <Link
-        href="/"
-        className="no-underline"
-        style={{
-          display: "flex",
-          flexDirection: "column",
-          alignItems: "flex-start",
-          gap: "0px",
-          lineHeight: 1,
-        }}
-      >
+      {/* Left: logo */}
+      <Link href="/" className="no-underline">
         <img
           src="/Microrituals.png"
           alt="Thrive by Design"
           style={{
-            height: "64px",
+            height: "72px",
             width: "auto",
-            maxWidth: "220px",
+            maxWidth: "240px",
             display: "block",
             objectFit: "contain",
           }}
         />
-        <span
-          style={{
-            fontSize: "0.85rem",
-            fontFamily: "var(--font-shippori-mincho-b1), serif",
-            fontWeight: 600,
-            color: "var(--ink)",
-            margin: 0,
-            padding: 0,
-          }}
-        >
-          Thrive by Design
-        </span>
       </Link>
 
       {/* Right: nav links + CTA */}
