@@ -132,7 +132,7 @@ export default function AboutPage() {
                 gathers 30–40 personal accounts from researchers, clinicians,
                 coaches, students, and staff — each sharing
                 a simple practice that supports their well-being, paired with
-                a brief exploration of the evidence behind it.
+                a brief exploration of the research behind it.
               </p>
             </FadeIn>
 
@@ -142,7 +142,7 @@ export default function AboutPage() {
                 style={{ color: "var(--slate-l)" }}
               >
                 The result is an open-access e-book — part personal, part
-                scientific — that offers a gentle, evidence-informed invitation
+                scientific — that offers a gentle, research-informed invitation
                 to notice the small things that already work, and perhaps to
                 try something new.
               </p>

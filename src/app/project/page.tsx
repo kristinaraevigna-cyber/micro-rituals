@@ -12,8 +12,8 @@ const phases = [
   {
     index: "02",
     title: "Research & Origins",
-    tag: "Respectful · Evidence-Aware",
-    body: "Our research team explores the origins and evidence behind each tiny practice, connecting personal experience with published science. Every account is treated with care, and contributors review their entry before publication.",
+    tag: "Respectful · Research-Informed",
+    body: "Our research team explores the origins and research behind each tiny practice, connecting personal experience with published science. Every account is treated with care, and contributors review their entry before publication.",
   },
   {
     index: "03",

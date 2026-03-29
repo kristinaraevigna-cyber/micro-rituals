@@ -84,7 +84,7 @@ export default function Home() {
               A collection of 30 tiny practices from researchers,
               clinicians, coaches, students, and staff — each sharing a simple
               practice that supports their wellbeing, paired with a brief
-              exploration of the evidence behind it. Published as an
+              exploration of the research behind it. Published as an
               open-access e-book.
             </p>
           </FadeIn>

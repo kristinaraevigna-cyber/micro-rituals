@@ -261,3 +261,4 @@ NEXT_PUBLIC_FORMSPREE_ID=your_form_id_here
 8. **No external UI libraries** — no shadcn, no MUI, no Chakra; build from scratch with Tailwind + CSS variables
 9. **TypeScript strict mode** — no `any` types
 10. **Mobile responsive** — vertical strip columns collapse on screens below 1000px; nav links hidden on mobile
+11. **Never use the word "evidence" or "evidence-based" on this site** — always use "research-informed" instead
