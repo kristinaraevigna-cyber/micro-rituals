@@ -22,7 +22,7 @@ export default function HeroLogo() {
       }}
     >
       <img
-        src="/Microrituals.png"
+        src="/tony-practices.png"
         alt="Thrive by Design"
         className="hero-logo-img"
         style={{

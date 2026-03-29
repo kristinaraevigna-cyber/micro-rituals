@@ -35,7 +35,7 @@ export default function Navbar() {
       {/* Left: logo */}
       <Link href="/" className="no-underline">
         <img
-          src="/Microrituals.png"
+          src="/tony-practices.png"
           alt="Thrive by Design"
           className="nav-logo"
           style={{
