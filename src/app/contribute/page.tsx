@@ -19,7 +19,7 @@ const steps = [
     numeral: "三",
     title: "Into the book",
     description:
-      "Your tiny practice is paired with research and added to the collection. You review it before publication.",
+      "Your tiny practice may be paired with research and included in the collection. You will review it before publication.",
   },
 ];
 
@@ -81,8 +81,8 @@ export default function ContributePage() {
             >
               We are seeking participants who have engaged in any programme offered
               by the Centre for Positive Health Sciences who would like to share a
-              simple practice that supports their well-being — and have it included
-              in an open-access book.
+              simple practice that supports their well-being. Your story may be
+              included in an open-access book.
             </p>
           </FadeIn>
 
